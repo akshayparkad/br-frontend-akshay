@@ -1,0 +1,133 @@
+.box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  
+  .box:hover .overlay {
+    opacity: 1;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+
+  .box-image {
+    width: 100%;
+    margin-bottom: 10px;
+    height:14rem;
+  }
+
+  .learn-more {
+    color: white;
+    font:bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  .box-title {
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    color: rgba(0, 0, 0, 0.903);
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+  }
+
+  .box-description {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: small;
+    color: #bcb5b5;
+    
+  }
+
+  .box-author {
+    font-size: 14px;
+    color: #888;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .box-date {
+    font-size: 14px;
+    color: #888;
+    align-self: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .box-author-date {
+    display: flex;
+    /* justify-content:space-between; */
+  }
+
+  .author-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  
+  .author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .author-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .color-circles {
+    display: flex;
+  }
+
+  .color-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 10px; 
+  }
+
+  .color-circle-blue{
+    /* width: 12px;
+    height: 12px; */
+    background-color: #3498db;
+    /* border-radius: 50%; */
+    
+  }
+
+  .color-circle-orange{
+    /* width: 12px;
+    height: 12px; */
+    background-color: #f0af7d;
+    /* border-radius: 50%; */
+
+  }
